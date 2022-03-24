@@ -17,7 +17,7 @@ Used to get the public ip address of the user and to determine his approx locati
 ## Getting started
 
 ```
-import "" as publicIP
+import 'package:public_ip/public_ip.dart' as publicIP;
 ```
 
 
