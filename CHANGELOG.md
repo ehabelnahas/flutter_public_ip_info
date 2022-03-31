@@ -1,3 +1,3 @@
-## 0.0.2
+## 0.0.3
 
 Get user public IP address with his approx location
