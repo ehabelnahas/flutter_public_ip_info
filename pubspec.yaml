@@ -1,6 +1,6 @@
 name: public_ip
 description: Get public ip, location and other details.
-version: 0.0.4
+version: 0.1.0
 homepage: https://github.com/hey-om7/flutter_package_public_ip
 
 environment:
