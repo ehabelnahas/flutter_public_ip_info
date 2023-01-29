@@ -11,7 +11,7 @@ Future<void> _assignAllValues() async {
     var _new = _html.getElementsByTagName("td");
     _publicIp = (_new[54].innerHtml);
     _Country = (_new[56].innerHtml);
-    _CountryCode = (_new[52].innerHtml);
+    _CountryCode = (_new[32].innerHtml);
     _State = (_new[58].innerHtml);
     _City = (_new[60].innerHtml);
     _ISP = (_new[62].innerHtml);
