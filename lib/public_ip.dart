@@ -11,6 +11,7 @@ Future<void> _assignAllValues() async {
     var _new = _html.getElementsByTagName("td");
     _publicIp = (_new[54].innerHtml);
     _Country = (_new[56].innerHtml);
+    _CountryInit = (_new[88].innerHtml);
     _CountryCode = (_new[32].innerHtml);
     _State = (_new[58].innerHtml);
     _City = (_new[60].innerHtml);
@@ -33,6 +34,7 @@ String? _ISP;
 String? _Services;
 String? _Continent;
 String? _Country;
+String? _CountryInit;
 String? _CountryCode;
 String? _State;
 String? _City;
@@ -96,6 +98,13 @@ Future getCountry() async {
     await _assignAllValues();
   }
   return _Country ?? "Error Fetching Country";
+}
+
+Future getCountryInit() async {
+  if (_CountryInit == null) {
+    await _assignAllValues();
+  }
+  return _CountryInit.substring(1) ?? "Error Fetching Country";
 }
 
 Future getCountryCode() async {
