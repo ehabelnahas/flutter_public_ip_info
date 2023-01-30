@@ -104,7 +104,7 @@ Future getCountryInit() async {
   if (_CountryInit == null) {
     await _assignAllValues();
   }
-  return _CountryInit.substring(1) ?? "Error Fetching Country";
+  return _CountryInit?.substring(1) ?? "Error Fetching Country";
 }
 
 Future getCountryCode() async {
